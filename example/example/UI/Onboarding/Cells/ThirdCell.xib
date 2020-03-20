@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ThirdCell" customModule="example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCY-BK-8VP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KsV-Al-2oH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4z-bT-beM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="392.5"/>
+                                        <subviews>
+                                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_desk" translatesAutoresizingMaskIntoConstraints="NO" id="mBM-Sp-EE7">
+                                                <rect key="frame" x="30" y="150" width="315" height="242.5"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-shelf" translatesAutoresizingMaskIntoConstraints="NO" id="ig7-Gu-i5R">
+                                                <rect key="frame" x="45" y="60" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ig7-Gu-i5R" secondAttribute="height" id="s4t-Ty-Yhd"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="mBM-Sp-EE7" firstAttribute="leading" secondItem="A4z-bT-beM" secondAttribute="leading" constant="30" id="A8t-2J-z30"/>
+                                            <constraint firstItem="ig7-Gu-i5R" firstAttribute="leading" secondItem="A4z-bT-beM" secondAttribute="leading" constant="45" id="FvO-Y9-WDz"/>
+                                            <constraint firstAttribute="trailing" secondItem="mBM-Sp-EE7" secondAttribute="trailing" constant="30" id="IaA-O1-5Fc"/>
+                                            <constraint firstItem="mBM-Sp-EE7" firstAttribute="top" secondItem="A4z-bT-beM" secondAttribute="top" constant="150" id="XWZ-YX-GzZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="mBM-Sp-EE7" secondAttribute="bottom" id="mqT-Yw-G9M"/>
+                                            <constraint firstItem="mBM-Sp-EE7" firstAttribute="top" secondItem="ig7-Gu-i5R" secondAttribute="bottom" id="qMb-ry-O6D"/>
+                                            <constraint firstItem="ig7-Gu-i5R" firstAttribute="top" secondItem="A4z-bT-beM" secondAttribute="top" constant="60" id="tje-Ai-hjI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7b-tp-NtQ">
+                                        <rect key="frame" x="0.0" y="392.5" width="375" height="274.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5yN-JB-znT">
+                                                <rect key="frame" x="40" y="55.5" width="295" height="103.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit word documents" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBz-pJ-9fj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="31.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open, edit and save word files - all within Docs" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baY-cQ-B5T">
+                                                        <rect key="frame" x="0.0" y="51.5" width="295" height="52"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="5yN-JB-znT" firstAttribute="centerY" secondItem="y7b-tp-NtQ" secondAttribute="centerY" constant="-30" id="6Gg-oe-BeV"/>
+                                            <constraint firstItem="5yN-JB-znT" firstAttribute="centerX" secondItem="y7b-tp-NtQ" secondAttribute="centerX" id="IO5-gd-axX"/>
+                                            <constraint firstAttribute="trailing" secondItem="5yN-JB-znT" secondAttribute="trailing" constant="40" id="KE5-kT-sZd"/>
+                                            <constraint firstItem="5yN-JB-znT" firstAttribute="leading" secondItem="y7b-tp-NtQ" secondAttribute="leading" constant="40" id="cMy-rC-XRj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="y7b-tp-NtQ" firstAttribute="height" secondItem="A4z-bT-beM" secondAttribute="height" multiplier="0.7" id="u3e-xC-t31"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KsV-Al-2oH" secondAttribute="bottom" id="3iA-RG-p3D"/>
+                            <constraint firstItem="KsV-Al-2oH" firstAttribute="top" secondItem="kCY-BK-8VP" secondAttribute="top" id="Y2Z-oT-wGs"/>
+                            <constraint firstAttribute="trailing" secondItem="KsV-Al-2oH" secondAttribute="trailing" id="aXl-nx-HBY"/>
+                            <constraint firstItem="KsV-Al-2oH" firstAttribute="leading" secondItem="kCY-BK-8VP" secondAttribute="leading" id="dz0-2r-dzQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kCY-BK-8VP" secondAttribute="trailing" id="Dgl-Ir-gFt"/>
+                <constraint firstItem="kCY-BK-8VP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Hvy-xP-c88"/>
+                <constraint firstAttribute="bottom" secondItem="kCY-BK-8VP" secondAttribute="bottom" id="NGH-1T-JqD"/>
+                <constraint firstItem="kCY-BK-8VP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yIL-rt-Qqm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="235" height="330"/>
+            <connections>
+                <outlet property="mainImageView" destination="mBM-Sp-EE7" id="IvZ-FS-59E"/>
+                <outlet property="shelfImageView" destination="ig7-Gu-i5R" id="E7X-6Z-ouH"/>
+                <outlet property="subtitleLabel" destination="baY-cQ-B5T" id="4Hu-Hc-rfW"/>
+                <outlet property="titleLabel" destination="kBz-pJ-9fj" id="fAj-fB-EJY"/>
+            </connections>
+            <point key="canvasLocation" x="-173.18840579710147" y="124.88839285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon-shelf" width="512" height="512"/>
+        <image name="icon_desk" width="512" height="512"/>
+    </resources>
+</document>
